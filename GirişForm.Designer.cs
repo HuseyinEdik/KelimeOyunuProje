@@ -28,39 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtbxPassword = new System.Windows.Forms.TextBox();
+            this.txtbxUserName = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnReg = new System.Windows.Forms.Button();
+            this.btnFpass = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Location = new System.Drawing.Point(217, 203);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "GİRİŞ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLogin.Location = new System.Drawing.Point(104, 213);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(112, 35);
+            this.btnLogin.TabIndex = 9;
+            this.btnLogin.Text = "GİRİŞ";
+            this.btnLogin.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtbxPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(199, 167);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 26);
-            this.textBox2.TabIndex = 8;
+            this.txtbxPassword.Location = new System.Drawing.Point(199, 167);
+            this.txtbxPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtbxPassword.Name = "txtbxPassword";
+            this.txtbxPassword.Size = new System.Drawing.Size(184, 26);
+            this.txtbxPassword.TabIndex = 8;
             // 
-            // textBox1
+            // txtbxUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(199, 123);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 26);
-            this.textBox1.TabIndex = 7;
+            this.txtbxUserName.Location = new System.Drawing.Point(199, 125);
+            this.txtbxUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtbxUserName.Name = "txtbxUserName";
+            this.txtbxUserName.Size = new System.Drawing.Size(184, 26);
+            this.txtbxUserName.TabIndex = 7;
             // 
             // lblPassword
             // 
@@ -84,25 +85,35 @@
             this.lblUserName.TabIndex = 5;
             this.lblUserName.Text = "Kullanıcı Adı :";
             // 
-            // button2
+            // btnReg
             // 
-            this.button2.Location = new System.Drawing.Point(217, 246);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 35);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "KAYDOL";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnReg.Location = new System.Drawing.Point(248, 213);
+            this.btnReg.Name = "btnReg";
+            this.btnReg.Size = new System.Drawing.Size(112, 35);
+            this.btnReg.TabIndex = 10;
+            this.btnReg.Text = "KAYDOL";
+            this.btnReg.UseVisualStyleBackColor = true;
+            // 
+            // btnFpass
+            // 
+            this.btnFpass.Location = new System.Drawing.Point(158, 256);
+            this.btnFpass.Name = "btnFpass";
+            this.btnFpass.Size = new System.Drawing.Size(150, 35);
+            this.btnFpass.TabIndex = 11;
+            this.btnFpass.Text = "Şifremi Unuttum";
+            this.btnFpass.UseVisualStyleBackColor = true;
             // 
             // GirişForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(474, 330);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(483, 330);
+            this.Controls.Add(this.btnFpass);
+            this.Controls.Add(this.btnReg);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txtbxPassword);
+            this.Controls.Add(this.txtbxUserName);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUserName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -116,11 +127,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.TextBox txtbxPassword;
+        private System.Windows.Forms.TextBox txtbxUserName;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUserName;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnReg;
+        private System.Windows.Forms.Button btnFpass;
     }
 }

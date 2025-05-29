@@ -46,29 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="GirişForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GirişForm.Designer.cs">
       <DependentUpon>GirişForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="KullanıcıKayıt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KullanıcıKayıt.Designer.cs">
-      <DependentUpon>KullanıcıKayıt.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="ŞifreUnuttumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ŞifreUnuttumForm.Designer.cs">
+      <DependentUpon>ŞifreUnuttumForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GirişForm.resx">
       <DependentUpon>GirişForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +72,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ŞifreUnuttumForm.resx">
+      <DependentUpon>ŞifreUnuttumForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
