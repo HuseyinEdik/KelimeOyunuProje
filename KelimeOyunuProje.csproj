@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnaMenüForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenüForm.Designer.cs">
+      <DependentUpon>AnaMenüForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GirişForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     <Compile Include="ŞifreUnuttumForm.Designer.cs">
       <DependentUpon>ŞifreUnuttumForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AnaMenüForm.resx">
+      <DependentUpon>AnaMenüForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GirişForm.resx">
       <DependentUpon>GirişForm.cs</DependentUpon>
     </EmbeddedResource>
