@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnaMenüForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AnaMenüForm.Designer.cs">
       <DependentUpon>AnaMenüForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarlarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarlarForm.Designer.cs">
+      <DependentUpon>AyarlarForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GirişForm.cs">
       <SubType>Form</SubType>
@@ -60,14 +73,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaporForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporForm.Designer.cs">
+      <DependentUpon>RaporForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SınavForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SınavForm.Designer.cs">
+      <DependentUpon>SınavForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ŞifreUnuttumForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ŞifreUnuttumForm.Designer.cs">
       <DependentUpon>ŞifreUnuttumForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnaMenüForm.resx">
       <DependentUpon>AnaMenüForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarlarForm.resx">
+      <DependentUpon>AyarlarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirişForm.resx">
       <DependentUpon>GirişForm.cs</DependentUpon>
@@ -81,6 +112,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RaporForm.resx">
+      <DependentUpon>RaporForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SınavForm.resx">
+      <DependentUpon>SınavForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ŞifreUnuttumForm.resx">
       <DependentUpon>ŞifreUnuttumForm.cs</DependentUpon>
     </EmbeddedResource>
