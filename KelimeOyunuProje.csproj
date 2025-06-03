@@ -85,6 +85,12 @@
     <Compile Include="SınavForm.Designer.cs">
       <DependentUpon>SınavForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WordleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WordleForm.Designer.cs">
+      <DependentUpon>WordleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ŞifreUnuttumForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SınavForm.resx">
       <DependentUpon>SınavForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WordleForm.resx">
+      <DependentUpon>WordleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ŞifreUnuttumForm.resx">
       <DependentUpon>ŞifreUnuttumForm.cs</DependentUpon>
