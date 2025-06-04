@@ -38,6 +38,7 @@
             this.btnC = new System.Windows.Forms.Button();
             this.btnD = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             // lblSoruNo
             // 
             this.lblSoruNo.AutoSize = true;
-            this.lblSoruNo.Location = new System.Drawing.Point(385, 137);
+            this.lblSoruNo.Location = new System.Drawing.Point(340, 132);
             this.lblSoruNo.Name = "lblSoruNo";
             this.lblSoruNo.Size = new System.Drawing.Size(109, 20);
             this.lblSoruNo.TabIndex = 1;
@@ -63,7 +64,7 @@
             // lblSoruDogru
             // 
             this.lblSoruDogru.AutoSize = true;
-            this.lblSoruDogru.Location = new System.Drawing.Point(385, 199);
+            this.lblSoruDogru.Location = new System.Drawing.Point(340, 194);
             this.lblSoruDogru.Name = "lblSoruDogru";
             this.lblSoruDogru.Size = new System.Drawing.Size(90, 20);
             this.lblSoruDogru.TabIndex = 2;
@@ -72,7 +73,7 @@
             // lblSoruYanlıs
             // 
             this.lblSoruYanlıs.AutoSize = true;
-            this.lblSoruYanlıs.Location = new System.Drawing.Point(385, 228);
+            this.lblSoruYanlıs.Location = new System.Drawing.Point(340, 223);
             this.lblSoruYanlıs.Name = "lblSoruYanlıs";
             this.lblSoruYanlıs.Size = new System.Drawing.Size(92, 20);
             this.lblSoruYanlıs.TabIndex = 3;
@@ -81,11 +82,11 @@
             // lblSoru
             // 
             this.lblSoru.AutoSize = true;
-            this.lblSoru.Location = new System.Drawing.Point(12, 320);
+            this.lblSoru.Location = new System.Drawing.Point(19, 327);
             this.lblSoru.Name = "lblSoru";
-            this.lblSoru.Size = new System.Drawing.Size(64, 20);
+            this.lblSoru.Size = new System.Drawing.Size(105, 20);
             this.lblSoru.TabIndex = 4;
-            this.lblSoru.Text = "SORU :";
+            this.lblSoru.Text = "Örnek Cümle:";
             // 
             // btnA
             // 
@@ -126,11 +127,20 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(88, 137);
+            this.pictureBox1.Location = new System.Drawing.Point(84, 98);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(171, 155);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(64, 287);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Kelime:";
             // 
             // SınavForm
             // 
@@ -138,6 +148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(489, 464);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnD);
             this.Controls.Add(this.btnC);
@@ -170,5 +181,6 @@
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnD;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

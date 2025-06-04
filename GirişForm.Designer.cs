@@ -46,6 +46,7 @@
             this.btnLogin.TabIndex = 9;
             this.btnLogin.Text = "GİRİŞ";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtbxPassword
             // 
@@ -62,6 +63,7 @@
             this.txtbxUserName.Name = "txtbxUserName";
             this.txtbxUserName.Size = new System.Drawing.Size(184, 26);
             this.txtbxUserName.TabIndex = 7;
+            this.txtbxUserName.TextChanged += new System.EventHandler(this.txtbxUserName_TextChanged);
             // 
             // lblPassword
             // 
@@ -93,6 +95,7 @@
             this.btnReg.TabIndex = 10;
             this.btnReg.Text = "KAYDOL";
             this.btnReg.UseVisualStyleBackColor = true;
+            this.btnReg.Click += new System.EventHandler(this.btnReg_Click);
             // 
             // btnFpass
             // 
@@ -102,6 +105,7 @@
             this.btnFpass.TabIndex = 11;
             this.btnFpass.Text = "Şifremi Unuttum";
             this.btnFpass.UseVisualStyleBackColor = true;
+            this.btnFpass.Click += new System.EventHandler(this.btnFpass_Click);
             // 
             // GirişForm
             // 
