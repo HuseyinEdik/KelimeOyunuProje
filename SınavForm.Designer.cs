@@ -32,7 +32,6 @@
             this.lblSoruNo = new System.Windows.Forms.Label();
             this.lblSoruYanlis = new System.Windows.Forms.Label();
             this.lblSoruDogru1 = new System.Windows.Forms.Label();
-            this.lblSoru = new System.Windows.Forms.Label();
             this.btnA = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
@@ -80,15 +79,6 @@
             this.lblSoruDogru1.TabIndex = 3;
             this.lblSoruDogru1.Text = "Doğru Sayısı";
             // 
-            // lblSoru
-            // 
-            this.lblSoru.AutoSize = true;
-            this.lblSoru.Location = new System.Drawing.Point(19, 327);
-            this.lblSoru.Name = "lblSoru";
-            this.lblSoru.Size = new System.Drawing.Size(105, 20);
-            this.lblSoru.TabIndex = 4;
-            this.lblSoru.Text = "Örnek Cümle:";
-            // 
             // btnA
             // 
             this.btnA.Location = new System.Drawing.Point(12, 383);
@@ -131,13 +121,14 @@
             this.pictureBox1.Location = new System.Drawing.Point(34, 79);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(239, 205);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 297);
+            this.label2.Location = new System.Drawing.Point(30, 327);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(192, 20);
             this.label2.TabIndex = 10;
@@ -167,7 +158,6 @@
             this.Controls.Add(this.btnC);
             this.Controls.Add(this.btnB);
             this.Controls.Add(this.btnA);
-            this.Controls.Add(this.lblSoru);
             this.Controls.Add(this.lblSoruDogru1);
             this.Controls.Add(this.lblSoruYanlis);
             this.Controls.Add(this.lblSoruNo);
@@ -189,7 +179,6 @@
         private System.Windows.Forms.Label lblSoruNo;
         private System.Windows.Forms.Label lblSoruYanlis;
         private System.Windows.Forms.Label lblSoruDogru1;
-        private System.Windows.Forms.Label lblSoru;
         private System.Windows.Forms.Button btnA;
         private System.Windows.Forms.Button btnB;
         private System.Windows.Forms.Button btnC;
