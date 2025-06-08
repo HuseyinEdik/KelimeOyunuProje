@@ -91,6 +91,7 @@
     <Compile Include="WordleForm.Designer.cs">
       <DependentUpon>WordleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WordleService.cs" />
     <Compile Include="ŞifreUnuttumForm.cs">
       <SubType>Form</SubType>
     </Compile>

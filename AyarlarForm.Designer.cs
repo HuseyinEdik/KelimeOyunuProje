@@ -30,8 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmbBxQueCount = new System.Windows.Forms.ComboBox();
+            this.Ayarları_Kaydet = new System.Windows.Forms.Button();
+            this.geriayar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,37 +56,34 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Sınav Soru Sayısı :";
             // 
-            // comboBox1
+            // cmbBxQueCount
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15"});
-            this.comboBox1.Location = new System.Drawing.Point(223, 117);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(89, 28);
-            this.comboBox1.TabIndex = 2;
+            this.cmbBxQueCount.FormattingEnabled = true;
+            this.cmbBxQueCount.Location = new System.Drawing.Point(223, 117);
+            this.cmbBxQueCount.Name = "cmbBxQueCount";
+            this.cmbBxQueCount.Size = new System.Drawing.Size(89, 28);
+            this.cmbBxQueCount.TabIndex = 2;
             // 
-            // button1
+            // Ayarları_Kaydet
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(89, 188);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Ayarları Kaydet";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Ayarları_Kaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Ayarları_Kaydet.Location = new System.Drawing.Point(89, 188);
+            this.Ayarları_Kaydet.Name = "Ayarları_Kaydet";
+            this.Ayarları_Kaydet.Size = new System.Drawing.Size(169, 35);
+            this.Ayarları_Kaydet.TabIndex = 3;
+            this.Ayarları_Kaydet.Text = "Ayarları Kaydet";
+            this.Ayarları_Kaydet.UseVisualStyleBackColor = true;
+            this.Ayarları_Kaydet.Click += new System.EventHandler(this.Ayarları_Kaydet_Click);
+            // 
+            // geriayar
+            // 
+            this.geriayar.Location = new System.Drawing.Point(223, 13);
+            this.geriayar.Name = "geriayar";
+            this.geriayar.Size = new System.Drawing.Size(117, 28);
+            this.geriayar.TabIndex = 4;
+            this.geriayar.Text = "Ana Menü";
+            this.geriayar.UseVisualStyleBackColor = true;
+            this.geriayar.Click += new System.EventHandler(this.geriayar_Click);
             // 
             // AyarlarForm
             // 
@@ -93,8 +91,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(339, 262);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.geriayar);
+            this.Controls.Add(this.Ayarları_Kaydet);
+            this.Controls.Add(this.cmbBxQueCount);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -110,7 +109,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbBxQueCount;
+        private System.Windows.Forms.Button Ayarları_Kaydet;
+        private System.Windows.Forms.Button geriayar;
     }
 }

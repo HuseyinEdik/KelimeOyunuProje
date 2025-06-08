@@ -35,10 +35,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btngrslsc = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.geriadmin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -102,22 +101,14 @@
             this.textBox2.Size = new System.Drawing.Size(100, 26);
             this.textBox2.TabIndex = 6;
             // 
-            // button1
+            // btngrslsc
             // 
-            this.button1.Location = new System.Drawing.Point(125, 234);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 33);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Görsel seç";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(241, 168);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 99);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.btngrslsc.Location = new System.Drawing.Point(125, 234);
+            this.btngrslsc.Name = "btngrslsc";
+            this.btngrslsc.Size = new System.Drawing.Size(99, 33);
+            this.btngrslsc.TabIndex = 7;
+            this.btngrslsc.Text = "Görsel seç";
+            this.btngrslsc.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -128,15 +119,25 @@
             this.button2.Text = "Ekle";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // geriadmin
+            // 
+            this.geriadmin.Location = new System.Drawing.Point(353, 13);
+            this.geriadmin.Name = "geriadmin";
+            this.geriadmin.Size = new System.Drawing.Size(100, 31);
+            this.geriadmin.TabIndex = 10;
+            this.geriadmin.Text = "Ana Menü";
+            this.geriadmin.UseVisualStyleBackColor = true;
+            this.geriadmin.Click += new System.EventHandler(this.geriadmin_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(466, 365);
+            this.Controls.Add(this.geriadmin);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btngrslsc);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
@@ -148,7 +149,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AdminForm";
             this.Text = "AdminForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,8 +163,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btngrslsc;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button geriadmin;
     }
 }

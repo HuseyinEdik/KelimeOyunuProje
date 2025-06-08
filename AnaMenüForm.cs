@@ -35,6 +35,9 @@ namespace KelimeOyunuProje
 
         private void button6_Click(object sender, EventArgs e)
         {
+
+            
+
             this.Hide();
 
             AdminForm yeni2Form = new AdminForm();
@@ -55,12 +58,14 @@ namespace KelimeOyunuProje
 
             WordleForm yeni4Form = new WordleForm();
 
-              yeni4Form.Show();
+            yeni4Form.Show();
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Bu kısım henüz hazır değil dilerseniz diğer çalışma şekillerine bakınız."); 
         }
     }
 }

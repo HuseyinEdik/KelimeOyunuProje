@@ -16,5 +16,12 @@ namespace KelimeOyunuProje
         {
             InitializeComponent();
         }
+
+        private void gerirapor_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            AnaMenüForm yeniana = new AnaMenüForm();
+            yeniana.Show();
+        }
     }
 }

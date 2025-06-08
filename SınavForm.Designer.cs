@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.lblSoruNo = new System.Windows.Forms.Label();
-            this.lblSoruDogru = new System.Windows.Forms.Label();
-            this.lblSoruYanlıs = new System.Windows.Forms.Label();
+            this.lblSoruYanlis = new System.Windows.Forms.Label();
+            this.lblSoruDogru1 = new System.Windows.Forms.Label();
             this.lblSoru = new System.Windows.Forms.Label();
             this.btnA = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
@@ -39,6 +39,7 @@
             this.btnD = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.gerisınav = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,27 +58,27 @@
             this.lblSoruNo.AutoSize = true;
             this.lblSoruNo.Location = new System.Drawing.Point(340, 132);
             this.lblSoruNo.Name = "lblSoruNo";
-            this.lblSoruNo.Size = new System.Drawing.Size(109, 20);
+            this.lblSoruNo.Size = new System.Drawing.Size(114, 20);
             this.lblSoruNo.TabIndex = 1;
-            this.lblSoruNo.Text = "soru numarası";
+            this.lblSoruNo.Text = "Soru Numarası";
             // 
-            // lblSoruDogru
+            // lblSoruYanlis
             // 
-            this.lblSoruDogru.AutoSize = true;
-            this.lblSoruDogru.Location = new System.Drawing.Point(340, 194);
-            this.lblSoruDogru.Name = "lblSoruDogru";
-            this.lblSoruDogru.Size = new System.Drawing.Size(90, 20);
-            this.lblSoruDogru.TabIndex = 2;
-            this.lblSoruDogru.Text = "yanlış sayısı";
+            this.lblSoruYanlis.AutoSize = true;
+            this.lblSoruYanlis.Location = new System.Drawing.Point(340, 194);
+            this.lblSoruYanlis.Name = "lblSoruYanlis";
+            this.lblSoruYanlis.Size = new System.Drawing.Size(97, 20);
+            this.lblSoruYanlis.TabIndex = 2;
+            this.lblSoruYanlis.Text = "Yanlış Sayısı";
             // 
-            // lblSoruYanlıs
+            // lblSoruDogru1
             // 
-            this.lblSoruYanlıs.AutoSize = true;
-            this.lblSoruYanlıs.Location = new System.Drawing.Point(340, 223);
-            this.lblSoruYanlıs.Name = "lblSoruYanlıs";
-            this.lblSoruYanlıs.Size = new System.Drawing.Size(92, 20);
-            this.lblSoruYanlıs.TabIndex = 3;
-            this.lblSoruYanlıs.Text = "doğru sayısı";
+            this.lblSoruDogru1.AutoSize = true;
+            this.lblSoruDogru1.Location = new System.Drawing.Point(340, 225);
+            this.lblSoruDogru1.Name = "lblSoruDogru1";
+            this.lblSoruDogru1.Size = new System.Drawing.Size(98, 20);
+            this.lblSoruDogru1.TabIndex = 3;
+            this.lblSoruDogru1.Text = "Doğru Sayısı";
             // 
             // lblSoru
             // 
@@ -123,24 +124,34 @@
             this.btnD.TabIndex = 8;
             this.btnD.Text = "btnD";
             this.btnD.UseVisualStyleBackColor = true;
-            this.btnD.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(84, 98);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 79);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 155);
+            this.pictureBox1.Size = new System.Drawing.Size(239, 205);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 287);
+            this.label2.Location = new System.Drawing.Point(19, 297);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 20);
+            this.label2.Size = new System.Drawing.Size(192, 20);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Kelime:";
+            this.label2.Text = "Soru:  İlgili kelimeyi seçiniz";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // gerisınav
+            // 
+            this.gerisınav.Location = new System.Drawing.Point(366, 13);
+            this.gerisınav.Name = "gerisınav";
+            this.gerisınav.Size = new System.Drawing.Size(103, 31);
+            this.gerisınav.TabIndex = 11;
+            this.gerisınav.Text = "Ana Menü";
+            this.gerisınav.UseVisualStyleBackColor = true;
+            this.gerisınav.Click += new System.EventHandler(this.gerisınav_Click);
             // 
             // SınavForm
             // 
@@ -148,6 +159,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(489, 464);
+            this.Controls.Add(this.gerisınav);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnD);
@@ -155,14 +167,15 @@
             this.Controls.Add(this.btnB);
             this.Controls.Add(this.btnA);
             this.Controls.Add(this.lblSoru);
-            this.Controls.Add(this.lblSoruYanlıs);
-            this.Controls.Add(this.lblSoruDogru);
+            this.Controls.Add(this.lblSoruDogru1);
+            this.Controls.Add(this.lblSoruYanlis);
             this.Controls.Add(this.lblSoruNo);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SınavForm";
             this.Text = "SınavForm";
+            this.Load += new System.EventHandler(this.SınavForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -173,8 +186,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblSoruNo;
-        private System.Windows.Forms.Label lblSoruDogru;
-        private System.Windows.Forms.Label lblSoruYanlıs;
+        private System.Windows.Forms.Label lblSoruYanlis;
+        private System.Windows.Forms.Label lblSoruDogru1;
         private System.Windows.Forms.Label lblSoru;
         private System.Windows.Forms.Button btnA;
         private System.Windows.Forms.Button btnB;
@@ -182,5 +195,6 @@
         private System.Windows.Forms.Button btnD;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button gerisınav;
     }
 }

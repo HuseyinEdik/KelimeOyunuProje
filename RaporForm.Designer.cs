@@ -40,6 +40,7 @@
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.gerirapor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
@@ -114,12 +115,23 @@
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // gerirapor
+            // 
+            this.gerirapor.Location = new System.Drawing.Point(447, 13);
+            this.gerirapor.Name = "gerirapor";
+            this.gerirapor.Size = new System.Drawing.Size(123, 30);
+            this.gerirapor.TabIndex = 6;
+            this.gerirapor.Text = "Ana Menü";
+            this.gerirapor.UseVisualStyleBackColor = true;
+            this.gerirapor.Click += new System.EventHandler(this.gerirapor_Click);
+            // 
             // RaporForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(582, 436);
+            this.Controls.Add(this.gerirapor);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.chart2);
@@ -145,5 +157,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button gerirapor;
     }
 }
