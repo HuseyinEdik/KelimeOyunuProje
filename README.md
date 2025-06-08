@@ -22,7 +22,7 @@
     bash
     kopyala
     düzenle
-    git clone 
+    git clone https://github.com/HuseyinEdik/KelimeOyunuProje.git
 - Visual Studio ile açın.(.sln dosyası)
 - SQL Server üzerinde diluygulamasi2 isimli veritabanı oluşturup gerekli tabloları kurun.
   (SQL scriptleri projenin içinde mevcut)
@@ -36,9 +36,6 @@
 
 
     ## Katkıda Bulunanlar
-  - Bircan Görür
+  - Bircan Görür 232802038
   - Hüseyin Edik 232802073
-  - Hasan Topal
-  
-
-     
+  - Hasan Topal  222803052
