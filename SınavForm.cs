@@ -202,6 +202,11 @@ namespace KelimeOyunuProje
             AnaMenüForm yeniana = new AnaMenüForm();
             yeniana.Show();
         }
+
+        private void btnD_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

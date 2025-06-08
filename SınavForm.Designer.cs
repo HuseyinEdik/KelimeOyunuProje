@@ -124,6 +124,7 @@
             this.btnD.TabIndex = 8;
             this.btnD.Text = "btnD";
             this.btnD.UseVisualStyleBackColor = true;
+            this.btnD.Click += new System.EventHandler(this.btnD_Click);
             // 
             // pictureBox1
             // 

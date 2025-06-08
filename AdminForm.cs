@@ -15,7 +15,10 @@ namespace KelimeOyunuProje
             InitializeComponent();
         }
 
-        private void btn2_Click(object sender, EventArgs e)
+        
+
+
+       private void btn2_Click(object sender, EventArgs e)
         {
             string engWord = textBox1.Text.Trim();
             string turWord = textBox2.Text.Trim();
@@ -55,20 +58,37 @@ namespace KelimeOyunuProje
                     // TEST → Hangi path gönderiyoruz?
                     MessageBox.Show("KAYDEDİLECEK PATH: " + newImageFullPath);
 
+                    int newWordId = 0;
+
+                    // 1️⃣ WORDS tablosuna ekle → word_id al
                     using (SqlCommand cmd = new SqlCommand(@"
                 INSERT INTO words (eng_word, tur_word, image_path)
                 VALUES (@engWord, @turWord, @imagePath);
+                SELECT SCOPE_IDENTITY();
             ", conn))
                     {
                         cmd.Parameters.AddWithValue("@engWord", engWord);
                         cmd.Parameters.AddWithValue("@turWord", turWord);
                         cmd.Parameters.AddWithValue("@imagePath", newImageFullPath);
 
-                        cmd.ExecuteNonQuery();
+                        object result = cmd.ExecuteScalar();
+                        newWordId = Convert.ToInt32(result);
+                    }
+
+                    // 2️⃣ user_progress tablosuna da ekle (her kullanıcı için ekleyebilirsin → şimdilik user_id=1 örnek)
+                    using (SqlCommand cmd2 = new SqlCommand(@"
+                INSERT INTO user_progress (user_id, word_id, correct_count, last_answer_date)
+                VALUES (@userId, @wordId, 0, GETDATE());
+            ", conn))
+                    {
+                        cmd2.Parameters.AddWithValue("@userId", 1); // Şimdilik user_id = 1
+                        cmd2.Parameters.AddWithValue("@wordId", newWordId);
+
+                        cmd2.ExecuteNonQuery();
                     }
                 }
 
-                MessageBox.Show("Kelime başarıyla eklendi!");
+                MessageBox.Show("Kelime ve kullanıcı ilerlemesi başarıyla eklendi!");
             }
             catch (Exception ex)
             {
@@ -80,6 +100,7 @@ namespace KelimeOyunuProje
             textBox2.Clear();
             selectedImagePath = "";
         }
+
 
 
         private void button2_Click(object sender, EventArgs e)
@@ -121,6 +142,8 @@ namespace KelimeOyunuProje
                     INSERT INTO words (eng_word, tur_word, image_path)
                     VALUES (@engWord, @turWord, @imagePath);
                 ", conn))
+
+                   
                 {
                     cmd.Parameters.AddWithValue("@engWord", engWord);
                     cmd.Parameters.AddWithValue("@turWord", turWord);
@@ -162,7 +185,10 @@ namespace KelimeOyunuProje
             }
         }
 
-        
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
