@@ -12,7 +12,7 @@ namespace KelimeOyunuProje
     {
         string hedefKelime = "";
 
-        // YENİ: Global değişkenler
+         
         Bitmap oyunBitmap;
         Graphics oyunGraphics;
         int tahminSayisi = 0;
@@ -36,15 +36,14 @@ namespace KelimeOyunuProje
             lblDurum2.Text = $"Yeni oyun başladı! ({hedefKelime.Length} harfli kelime)";
             txtTahmin.Text = "";
 
-            // YENİ: Yeni bitmap ve grafik başlat
+            
             oyunBitmap = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             oyunGraphics = Graphics.FromImage(oyunBitmap);
             tahminSayisi = 0;
 
             pictureBox1.Image = oyunBitmap;
 
-            // DEBUG → seçilen kelime gösterebilirsin:
-            // MessageBox.Show("Seçilen kelime: " + hedefKelime);
+            
         }
 
         private void btnTahminEt_Click(object sender, EventArgs e)
@@ -93,10 +92,10 @@ namespace KelimeOyunuProje
                 oyunGraphics.DrawString(tahminHarf.ToString().ToUpper(), new Font("Arial", 24), Brushes.Black, baslangicX + i * (kareBoyut + 10) + 10, baslangicY + 5);
             }
 
-            // YENİ: resmi güncelle
+            
             pictureBox1.Image = oyunBitmap;
 
-            // YENİ: tahmin sayısını artır
+             
             tahminSayisi++;
 
             if (tahmin == hedefKelime)
@@ -128,7 +127,8 @@ namespace KelimeOyunuProje
                     FROM words w
                     JOIN user_progress up ON up.word_id = w.id
                     WHERE LEN(w.eng_word) = 5
-                      AND up.correct_count >=0  
+                      AND up.correct_count >=0
+
                 ", conn))
                 {
                     object result = cmd.ExecuteScalar();

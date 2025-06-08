@@ -109,6 +109,7 @@
             this.btngrslsc.TabIndex = 7;
             this.btngrslsc.Text = "Görsel seç";
             this.btngrslsc.UseVisualStyleBackColor = true;
+            this.btngrslsc.Click += new System.EventHandler(this.btngrslsc_Click);
             // 
             // button2
             // 
@@ -118,6 +119,7 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Ekle";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // geriadmin
             // 
